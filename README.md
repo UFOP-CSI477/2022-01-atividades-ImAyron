@@ -3,11 +3,11 @@
 
 ## Atualize os seus dados
 
-- Nome:
-- Matrícula:
-- Curso:
-- Semestre/Ano correntes:
-- Link para o seu GitHub:
+- Nome:Ayron Luigi de Paiva
+- Matrícula:19.1.8065
+- Curso:Engenharia de Computação
+- Semestre/Ano correntes:2022.1
+- Link para o seu GitHub:https://github.com/ImAyron
 
 ## [Projeto final:](./Projeto/README.md)
 
