@@ -1,6 +1,6 @@
 # **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Ayron Luigi de Paiva*
 
 --------------
 
@@ -8,17 +8,26 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  (O trabalho se refere ao sistema de gerenciamento de pedidos de um restaurante, sua principal função será a de criar pedidos e enviar para a cozinha preparar, o garçom conseguirá realizar o pedido diretamente de seu celular.)
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de ...
+  O trabalho final tem como tema o desenvolvimento de sistema de gerenciamento de pedidos de um restaurante.
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
 
-  Este projeto terá as seguintes funcionalidades...
+  Este projeto terá as seguintes funcionalidades:
+  Funções Administrador
+  1 - Criar item (Preço)
+  2 - Editar item
+  3 - Excluir item
+  
+  Funções Garçom
+  1 - Exibir os itens cadastrados
+  2 - adicionar os itens no carrinho
+  3 - Fechar pedido
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
