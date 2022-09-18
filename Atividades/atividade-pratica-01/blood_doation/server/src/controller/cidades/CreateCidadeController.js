@@ -1,8 +1,5 @@
 import { prismaClient } from '../../database/client.js'
 
-
-
-
 export class CreateCidadeController {
 
     async handle(request, response) {

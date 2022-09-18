@@ -2,6 +2,10 @@ import express from 'express';
 import { mainRouter } from './routes/main.js';
 import { estadoRouter } from './routes/estados.js';
 import { cidadeRouter } from './routes/cidades.js';
+import { localRouter } from './routes/locais.js';
+import { pessoaRouter} from './routes/pessoa.js';
+import { tipoRouter } from './routes/tipos.js';
+
 
 import cors from 'cors';
 
@@ -15,6 +19,10 @@ app.use(cors());
 app.use(mainRouter);
 app.use(estadoRouter);
 app.use(cidadeRouter);
+app.use(localRouter);
+app.use(pessoaRouter);
+app.use(tipoRouter);
+
 
 app.listen(PORT, () =>{
     console.log(`[SERVER] Server is running on port ${PORT}`);
