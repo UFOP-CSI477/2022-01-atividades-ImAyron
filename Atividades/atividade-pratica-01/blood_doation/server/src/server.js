@@ -5,7 +5,7 @@ import { cidadeRouter } from './routes/cidades.js';
 import { localRouter } from './routes/locais.js';
 import { pessoaRouter} from './routes/pessoa.js';
 import { tipoRouter } from './routes/tipos.js';
-
+import { doacaoRouter } from './routes/doacoes.js';
 
 import cors from 'cors';
 
@@ -22,6 +22,7 @@ app.use(cidadeRouter);
 app.use(localRouter);
 app.use(pessoaRouter);
 app.use(tipoRouter);
+app.use(doacaoRouter);
 
 
 app.listen(PORT, () =>{

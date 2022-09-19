@@ -48,7 +48,7 @@ model Pessoa{
   cidade Cidade @relation(fields: [cidade_id],references: [id])
   tipo  Tipo_sanguineo @relation(fields: [tipo_id],references: [id])
   created_at DateTime @default(now())
-
+  doacao doacao[]
   @@map("pessoas")
 
 }
@@ -72,6 +72,19 @@ model local_coleta{
    complemento String 
    cidade_id Int
    local Cidade @relation(fields: [cidade_id],references: [id])
-
+   created_at DateTime @default(now())
+   doacao doacao[]
   @@map("locais")
+}
+
+model doacao{
+  id        Int   @id @default(autoincrement())
+  pessoa_id  Int
+  local_id Int
+  data  DateTime
+  local local_coleta @relation(fields: [local_id],references: [id])
+  pessoa Pessoa @relation(fields: [pessoa_id],references: [id])
+  created_at DateTime @default(now())
+
+  @@map("doacoes")
 }
