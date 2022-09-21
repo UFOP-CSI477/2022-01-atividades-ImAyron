@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { CreatePessoaController } from '../controller/pessoas/CreatePessoaController.js';
 import { GetAllPessoaController } from '../controller/pessoas/GetAllPessoaController.js';
-import { GetAllPessoaController } from '../controller/pessoas/GetAllPessoaController.js';
+
 const pessoaRouter = Router();
 
 const createPessoaController = new CreatePessoaController();

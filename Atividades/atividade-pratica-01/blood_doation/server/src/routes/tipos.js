@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { CreateTiposController } from '../controller/tipos/CreateTiposController.js';
 import { GetAllTiposController } from '../controller/tipos/GetAllTiposController.js';
-import { GetAllTiposController } from '../controller/tipos/GetAllTiposController.js';
+
 
 const tipoRouter = Router();
 
