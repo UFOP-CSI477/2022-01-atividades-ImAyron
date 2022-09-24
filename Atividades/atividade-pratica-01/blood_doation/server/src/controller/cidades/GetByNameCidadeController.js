@@ -1,6 +1,6 @@
 import { prismaClient } from '../../database/client.js'
 
-export class GetByIdCidadeController {
+export class GetByNameCidadeController {
 
 
     async handle(request, response) {

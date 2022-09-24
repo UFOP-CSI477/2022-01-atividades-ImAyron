@@ -8,10 +8,10 @@ const localRouter = Router();
 
 const createLocalController= new CreateLocalController();
 const getAllLocalController=new GetAllLocalController();
-const getByidlocalController = new GetByIdLocalController();
+const getByidLocalController = new GetByIdLocalController();
 
 localRouter.get('/locais',getAllLocalController.handle);
 localRouter.post('/locais',createLocalController.handle);
-localRouter.get('/local/:id',getByidlocalController.handle);
+localRouter.get('/locais/:id',getByidLocalController.handle);
 
 export { localRouter }
