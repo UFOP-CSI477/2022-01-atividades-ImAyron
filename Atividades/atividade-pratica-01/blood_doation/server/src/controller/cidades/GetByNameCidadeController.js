@@ -5,12 +5,14 @@ export class GetByNameCidadeController {
 
     async handle(request, response) {
 
-        const { id,nome } = request.params;
+        const { nome } = request.params;
 
         const cidade = await prismaClient.cidade.findMany({
             where: {
-                id: parseInt(id),
                 nome: nome
+            },
+            select: {
+                id:true
             }
         });
 
