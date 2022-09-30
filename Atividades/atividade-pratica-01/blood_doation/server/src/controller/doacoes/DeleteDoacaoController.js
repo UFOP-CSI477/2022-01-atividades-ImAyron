@@ -7,8 +7,8 @@ export class DeletedoacaoController {
     async handle(request, response) {
 
         const { id } = request.body;
-        const doacaoModel = new doacaoModel();
-        if (! (await doacaoModel.exists(id))) {
+        const doacaoModel1 = new doacaoModel();
+        if (! (await doacaoModel1.exists(id))) {
             console.log(`[DeletedoacaoController] doacao id: ${id} does not exist!`);
             return response.status(403).json({ 
                 message: `[DeletedoacaoController] doacao id: ${id} does not exist! (model check)`

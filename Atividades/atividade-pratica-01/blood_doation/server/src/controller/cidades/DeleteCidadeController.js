@@ -1,14 +1,14 @@
 import { PrismaClientKnownRequestError } from "@prisma/client/runtime/index.js";
 import { prismaClient } from "../../database/client.js";
-import { cidadeModel } from "../../model/cidadeModel.js";
+import { cidadeModel } from"../../model/cidadeModel.js"
 
 export class DeletecidadeController {
 
     async handle(request, response) {
 
         const { id } = request.body;
-        const cidadeModel = new cidadeModel();
-        if (! (await cidadeModel.exists(id))) {
+        const cidadeModel1 = new cidadeModel();
+        if (! (await cidadeModel1.exists(id))) {
             console.log(`[DeletecidadeController] cidade id: ${id} does not exist!`);
             return response.status(403).json({ 
                 message: `[DeletecidadeController] cidade id: ${id} does not exist! (model check)`

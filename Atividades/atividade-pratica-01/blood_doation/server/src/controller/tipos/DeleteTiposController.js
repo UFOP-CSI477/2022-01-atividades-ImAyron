@@ -7,8 +7,8 @@ export class DeletetiposController {
     async handle(request, response) {
 
         const { id } = request.body;
-        const tiposModel = new tiposModel();
-        if (! (await tiposModel.exists(id))) {
+        const tiposModel1 = new tiposModel();
+        if (! (await tiposModel1.exists(id))) {
             console.log(`[DeletetiposController] tipos id: ${id} does not exist!`);
             return response.status(403).json({ 
                 message: `[DeletetiposController] tipos id: ${id} does not exist! (model check)`

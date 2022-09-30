@@ -7,8 +7,8 @@ export class DeletelocalController {
     async handle(request, response) {
 
         const { id } = request.body;
-        const localModel = new localModel();
-        if (! (await localModel.exists(id))) {
+        const localModel1 = new localModel();
+        if (! (await localModel1.exists(id))) {
             console.log(`[DeletelocalController] local id: ${id} does not exist!`);
             return response.status(403).json({ 
                 message: `[DeletelocalController] local id: ${id} does not exist! (model check)`

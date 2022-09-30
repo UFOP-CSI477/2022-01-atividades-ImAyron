@@ -1,5 +1,5 @@
 import { prismaClient } from "../database/client.js";
-import { prismaClient } from "../database/client.js";
+
 
 export class tiposModel{
 

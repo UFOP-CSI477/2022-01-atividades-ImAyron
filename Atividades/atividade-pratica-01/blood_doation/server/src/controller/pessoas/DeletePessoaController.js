@@ -7,8 +7,8 @@ export class DeletePessoaController {
     async handle(request, response) {
 
         const { id } = request.body;
-        const PessoaModel = new PessoaModel();
-        if (! (await PessoaModel.exists(id))) {
+        const PessoaModel1 = new PessoaModel();
+        if (! (await PessoaModel1.exists(id))) {
             console.log(`[DeletePessoaController] Pessoa id: ${id} does not exist!`);
             return response.status(403).json({ 
                 message: `[DeletePessoaController] Pessoa id: ${id} does not exist! (model check)`
