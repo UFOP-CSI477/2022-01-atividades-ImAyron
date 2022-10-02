@@ -13,7 +13,7 @@
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de sistema de gerenciamento de pedidos de um restaurante.
+  O trabalho final tem como tema o desenvolvimento de sistema de gerenciamento de pedidos de um restaurante, a motivação veio por ter trabalhado em joão monlevade algumas vezes como garçom e os estabelecimentos não possuiam um sistema automatizado para a realização dos pedidos que era anotado em blocos de papeis, levando algumas vezes em confusões na cozinha.
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
@@ -32,12 +32,12 @@
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
-
+  Neste trabalho não serão considerados os cargos, nem a necessidade de um sistema de login, lembrando que o laravel tecnologia escolhida por mim implementa de forma automática.
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Página inicial: views/welcome.blade.php
+  Página de pedidos: views/pedidos/index.blade.php
 
 ### 5. Referências
 
