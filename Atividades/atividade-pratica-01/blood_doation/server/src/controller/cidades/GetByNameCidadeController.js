@@ -12,7 +12,10 @@ export class GetByNameCidadeController {
                 nome: nome
             },
             select: {
-                id:true
+                id: true,
+                nome: true,
+                estado: true
+
             }
         });
 
