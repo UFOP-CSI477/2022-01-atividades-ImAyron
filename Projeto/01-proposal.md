@@ -5,7 +5,7 @@
 --------------
 
 <!-- Descrever um resumo sobre o trabalho. -->
-https://jetstream.laravel.com/2.x/introduction.html
+
 ### Resumo
 
   (O trabalho se refere ao sistema de gerenciamento de pedidos de um restaurante, sua principal função será a de criar pedidos e enviar para a cozinha preparar, o garçom conseguirá realizar o pedido diretamente de seu celular.)
@@ -36,13 +36,13 @@ https://jetstream.laravel.com/2.x/introduction.html
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados os cargos, nem a necessidade de um sistema de login, visto que sua utilização não será em escala real, lembrando que o laravel tecnologia escolhida por mim implementa de forma automática com o (https://jetstream.laravel.com/2.x/introduction.html)Laravel Jetstream</a>.
+  Neste trabalho não serão considerados os cargos, nem a necessidade de um sistema de login, visto que sua utilização não será em escala real, lembrando que o laravel tecnologia escolhida por mim implementa de forma automática com o (https://jetstream.laravel.com/2.x/introduction.html), outra restrição encontrada foi em adicionar imagens do produto, após algumas tentativas falhas não conseguir adicionar imagens, por isso foram usadas imagens meramente ilustrativas.
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
-
+  
   Página inicial: views/welcome.blade.php
-  Página de pedidos: views/pedidos/index.blade.php
-
+  Página para realização dos pedidos pedidos: views/pedidos/index.blade.php
+  
 ### 5. Referências
 
   Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
