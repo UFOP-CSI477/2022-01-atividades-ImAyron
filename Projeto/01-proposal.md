@@ -24,6 +24,10 @@
   2 - Editar item
   3 - Excluir item
   
+  Funções Cozinha
+  1 -  Dizer quando o pedido estiver pronto
+  
+  
   Funções Garçom
   1 - Exibir os itens cadastrados
   2 - adicionar os itens no carrinho
@@ -32,7 +36,7 @@
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados os cargos, nem a necessidade de um sistema de login, lembrando que o laravel tecnologia escolhida por mim implementa de forma automática.
+  Neste trabalho não serão considerados os cargos, nem a necessidade de um sistema de login, visto que sua utilização não será em escala real, lembrando que o laravel tecnologia escolhida por mim implementa de forma automática com o <a href=“https://jetstream.laravel.com/2.x/introduction.html“>Laravel Jetstream</a>.
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
 
