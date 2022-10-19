@@ -5,7 +5,7 @@
 --------------
 
 <!-- Descrever um resumo sobre o trabalho. -->
-
+https://jetstream.laravel.com/2.x/introduction.html
 ### Resumo
 
   (O trabalho se refere ao sistema de gerenciamento de pedidos de um restaurante, sua principal função será a de criar pedidos e enviar para a cozinha preparar, o garçom conseguirá realizar o pedido diretamente de seu celular.)
