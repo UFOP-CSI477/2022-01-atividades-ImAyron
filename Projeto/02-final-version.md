@@ -8,7 +8,7 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  (O trabalho se refere ao sistema de gerenciamento de pedidos de um restaurante, sua principal função será a de criar pedidos e enviar para a cozinha preparar, o garçom conseguirá realizar o pedido diretamente de seu celular.)
 
 ### 1. Funcionalidades implementadas
 Crud padrão para produtos(Create, read, updtate and delete), criação de pedidos, cardapio para realizar pedidos.
