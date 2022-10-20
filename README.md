@@ -11,4 +11,4 @@
 
 ## [Projeto final:](./Projeto/README.md)
 
-Apresente uma breve descrição do seu projeto.
+Como projeto final, trouxe um cardapio desenvolvido como Framework Laravel, a ideia da aplicação é realizar pedidos de diversos produtos .
