@@ -17,13 +17,16 @@ Crud padrão para produtos(Create, read, updtate and delete), criação de pedid
 Adicionar imagem de cada produto, sistemas de login e gerenciamento de cargos
 
 ### 3. Outras funcionalidades implementadas
-<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
+Sistema de confirmação de pedidos, a cozinho consegue confirmar quando um pedido está pronto ou não, e o garçom consegue saber quais estão em preparação ou prontos.
 
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+A principal dificuldade que tive, foi na integração do javaScript com o PHP, por se tratar de 2 linguagens que utilizão de uma sintaxe totalmente diferente, outro ponto a se pensar foi na criação do banco de dados, se o mesmo deveria possuir funções de chave estrangeira (foreign-key), que no final foi analisado que não houve tanta necessidade.
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
+1-Instalação dos componentes necessários:
+Para executarmos uma aplicação Laravel, devemos ter a váriavel de ambiente do PHP(https://www.php.net/downloads.php) devidamente instalada, referente a versão do Laravel que utilizamos, é importante tambem ter o gerenciador de pacotes composer(https://getcomposer.org/download/) instalado, o código da aplicação está no mesmo reposítorio desse arquivo
 
+
+2- Banco de dados
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
