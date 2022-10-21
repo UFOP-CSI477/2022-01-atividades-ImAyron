@@ -24,9 +24,19 @@ A principal dificuldade que tive, foi na integração do javaScript com o PHP, p
 
 ### 5. Instruções para instalação e execução
 1-Instalação dos componentes necessários:
-Para executarmos uma aplicação Laravel, devemos ter a váriavel de ambiente do PHP(https://www.php.net/downloads.php) devidamente instalada, referente a versão do Laravel que utilizamos, é importante tambem ter o gerenciador de pacotes composer(https://getcomposer.org/download/) instalado, o código da aplicação está no mesmo reposítorio desse arquivo
+
+Para executarmos uma aplicação Laravel, devemos ter a váriavel de ambiente do PHP(https://www.php.net/downloads.php) devidamente instalada, referente a versão do Laravel que utilizamos, é importante tambem ter o gerenciador de pacotes composer(https://getcomposer.org/download/) instalado, o código da aplicação está no mesmo reposítorio desse arquivo.
 
 
 2- Banco de dados
+
+O laravel tem suporte para diversos bancos de dados, mas o que eu escolhi é o SQlite, pela facilidade da sua conexão com a aplicação, o passo a passo para sua utilização será descrita a seguir:
+
+* Na pasta database crie o arquivo database.sqlite
+* Após a criação do arquivo vá até a pasta .env e defina a linha da conexão do banco de dados como a seguinte DB_CONNECTION=sqlite, comente o restante das linhas com DB_.
+* Com todos os passos anteriores executados, voçe será capaz de rodar os comando artisan(https://laravel-docs-pt-br.readthedocs.io/en/5.0/artisan/), entre na pasta raiz do projeto e digite o seguinte comando Php artisan migrate, para criar as tabelas automaticamente, no seu arquivo de banco de dados.
+
+3- 
+
 ### 6. Referências
 <!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
