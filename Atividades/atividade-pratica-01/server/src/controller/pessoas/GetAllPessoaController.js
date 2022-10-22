@@ -7,13 +7,15 @@ export class GetAllPessoaController {
 
         const pessoa = await prismaClient.pessoa.findMany({
             select: {
+                id:true,
                 nome:true,
                 rua:true,
                 numero:true,
                 complemento:true,
                 documento:true,
                 cidade:true,
-                tipo:true
+                tipo:true,
+                created_at:true
                
             }
         });

@@ -13,8 +13,9 @@ const ShowEstado = () => {
     const [ sigla, setSigla] = useState('');
 
     useEffect(() => {
-
+        console.log(id)
         api.get(`/estados/${id}`)
+        
             .then(response => {
                 // console.log(response.data);
                 setEstado(response.data);
@@ -37,7 +38,7 @@ const ShowEstado = () => {
         }
 
         try {
-            await api.delete('/estados/' , {
+            await api.delete(`/estados/${id}` , {
                 data: {
                     data
                 }
@@ -61,7 +62,7 @@ const ShowEstado = () => {
 
 
             <div>
-                <Link to={`/estados/update/${id}`}>Atualizar</Link>
+                <Link to={`/estados/update/${id}`}><button>Atualizar</button></Link>
             </div>
             <div>
                 <button onClick={handleDeleteEstado}>Excluir</button>

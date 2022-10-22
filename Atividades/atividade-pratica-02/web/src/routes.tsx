@@ -4,11 +4,22 @@ import CreateCidade from "./components/cidades/CreateCidade";
 import ListCidades from "./components/cidades/ListCidades";
 import ShowCidade from "./components/cidades/ShowCidade";
 import UpdateCidade from "./components/cidades/UpdateCidade";
+import CreateDoacao from "./components/doacoes/CreateDoacao";
 import CreateEstado from "./components/estados/CreateEstado";
 import ListEstados from "./components/estados/ListEstados";
 import ShowEstado from "./components/estados/ShowEstado";
 import UpdateEstado from "./components/estados/UpdateEstado";
 import Header from "./components/header/Header";
+import CreatePessoa from "./components/pessoas/CreatePessoa";
+import ListPessoas from "./components/pessoas/ListPessoas";
+import ShowPessoa from "./components/pessoas/ShowPessoa";
+import UpdatePessoa from "./components/pessoas/UpdatePessoa";
+import CreateTipo from "./components/tipos/CreateTipo";
+import ListTipos from "./components/tipos/ListTipos";
+import ShowTipo from "./components/tipos/showTipo";
+import UpdateTipo from "./components/tipos/UpdateTipos";
+import CreateUnidade from "./components/unidades/CreateUnidade";
+import ListUnidades from "./components/unidades/ListUnidades";
 import LoginUser from "./components/users/LoginUser";
 
 const AppRoutes = () => {
@@ -46,6 +57,32 @@ const AppRoutes = () => {
                 <Route path="/login"
                     element={<LoginUser />} />
 
+                <Route path="/doacoes" element={<CreateDoacao/>}/>
+
+                <Route path="/tipos/create" element={<CreateTipo/>}/>
+
+                <Route path="/tipos" element={<ListTipos/>}/>
+
+                <Route path="/tipos/show/:id" element={<ShowTipo/>}/>
+
+                <Route path="/tipos/update/:id" element={<UpdateTipo/>}/>
+                
+                <Route path="/pessoas/create" element={<CreatePessoa/>}/>
+
+                <Route path="/pessoas/show/:id" element={<ShowPessoa/>}/>
+
+                <Route path="/pessoas/update/:id" element={<UpdatePessoa/>}/>
+
+                <Route path="/pessoas" element={<ListPessoas/>}/>
+
+                <Route path="/unidades" element={<ListUnidades/>}/>
+
+                <Route path="/unidades/create" element={<CreateUnidade/>}/>
+                
+
+
+
+            
             </Routes>
 
         </BrowserRouter>

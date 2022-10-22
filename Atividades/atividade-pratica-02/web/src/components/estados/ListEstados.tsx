@@ -20,22 +20,8 @@ const ListEstados = () => {
 
     // Effect -> carregar os dados
     useEffect(() => {
-        // Component -> effect -> state -> render()
-        const token = window.localStorage.getItem('token') || undefined
-
-        if (token === undefined) {
-            navigate('/login');
-        }
-
-        const header = window.localStorage.getItem('header');
-
-        const config = {
-            headers: {
-                "Authorization": `Bearer ${header} ${token}`
-            }
-        }
-
-        api.get('/estados', config)
+        
+        api.get('/estados', )
             .then(reponse => {
                 // atualizar o state
                 console.log(reponse.data);
@@ -49,7 +35,7 @@ const ListEstados = () => {
         <div>
             <h2>Lista dos Estados</h2>
 
-            <table>
+            <table className="estados">
                 <thead>
                     <tr>
                         <th>Id</th>

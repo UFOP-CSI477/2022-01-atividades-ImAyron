@@ -55,35 +55,9 @@ const CreateCidade = () => {
                         onChange={e => setNome(e.target.value)} />
                 </div>
 
-                <div>
-                    <label htmlFor="estadoId">estadoId</label>
-                    <input
-                        type="text"
-                        name="estadoId"
-                        id="estadoId"
-                        placeholder="Estado ID da cidade"
-                        value={estadoId}
-                        onChange={e => setEstadoId(parseInt(e.target.value))} />
-                </div>
+              
 
-                <div>
-                    <select name="estado"
-                        id="estado"
-                        value={estadoId}
-                        onChange={e => setEstadoId(parseInt(e.target.value))}
-                    >
-                        <option
-                            value="0" selected>Selecione</option>
-
-                        {
-                            estados.map(item => (
-                                <option value={item.id}>{item.nome}</option>
-                            ))
-                        }
-
-                    </select>
-                </div>
-
+               
                 <SelectEstados 
                     id={estadoId} 
                     setId={setEstadoId}

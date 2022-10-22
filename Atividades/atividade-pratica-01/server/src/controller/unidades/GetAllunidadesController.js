@@ -7,6 +7,7 @@ export class GetAllUnidadesController {
 
         const unidades = await prismaClient.Unidade.findMany({
             select: {
+                id:true,
                 cidade: true,
                 nome: true,
                 numero: true,

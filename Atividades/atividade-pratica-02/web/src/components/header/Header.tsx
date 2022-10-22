@@ -6,7 +6,7 @@ import Menu from '../menu/Menu';
 import styled from 'styled-components';
 
 const Title = styled.header`
-    background-color: #d3a3a0;
+    background-color: red;
     color: #f3f3f2;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,9 @@ const Button = styled.button<{ primary? : boolean }>`
 
 
 const StyledLink = styled(Link)`
-    background-color: #ffd5aa;
-    color: #d2e4c3;
+   
+
+    color: black;
 `
 
 // function Header() {

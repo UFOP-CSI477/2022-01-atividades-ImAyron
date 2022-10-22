@@ -26,7 +26,7 @@ const ShowCidade = () => {
             <p>Data de inserção: {cidade?.created_at}</p>
 
             <div>
-                <Link to={`/cidades/update/${cidade?.id}`}>Atualizar</Link>
+                <Link to={`/cidades/update/${cidade?.id}`}><button>Atualizar</button></Link>
             </div>
 
         </div>

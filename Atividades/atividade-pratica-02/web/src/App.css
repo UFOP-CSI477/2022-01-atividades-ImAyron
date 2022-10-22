@@ -4,7 +4,30 @@
  border: 0;
  font-size: 100%; 
 } */
+a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
 
+}
+button{
+  background-color: orange;
+  border-radius: 10px;
+}
+th {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+
+}
+tr{
+  background-color: rgb(255, 116, 116);
+  color: white;
+}
+body{
+  background-color: #ffcaca;
+}
 .App {
   text-align: center;
 }

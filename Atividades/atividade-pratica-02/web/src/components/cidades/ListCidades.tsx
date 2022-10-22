@@ -40,7 +40,7 @@ const ListCidades = () => {
         }
 
         try {
-            await api.delete('/cidades', {
+            await api.delete(`/cidades/${id}`, {
                 data: {
                     data
                 }

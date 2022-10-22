@@ -7,6 +7,7 @@ export class GetAllDistribuicoesController {
 
         const distribuicoess = await prismaClient.Distribuicao.findMany({
             select: {
+                id:true,
                 produto: true,
                 unidade: true,
                 data: true

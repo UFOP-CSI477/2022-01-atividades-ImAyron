@@ -7,6 +7,7 @@ export class GetAllProdutosController {
 
         const produtos = await prismaClient.Produto.findMany({
             select: {
+                id:true,
                 doacao: true,
                 etiqueta: true,
                 validade: true
