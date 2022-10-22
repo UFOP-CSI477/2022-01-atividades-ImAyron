@@ -5,6 +5,8 @@ import ListCidades from "./components/cidades/ListCidades";
 import ShowCidade from "./components/cidades/ShowCidade";
 import UpdateCidade from "./components/cidades/UpdateCidade";
 import CreateDoacao from "./components/doacoes/CreateDoacao";
+import ListDoacoes from "./components/doacoes/ListDoacoes";
+import ShowDoacao from "./components/doacoes/ShowDoacao";
 import CreateEstado from "./components/estados/CreateEstado";
 import ListEstados from "./components/estados/ListEstados";
 import ShowEstado from "./components/estados/ShowEstado";
@@ -14,6 +16,8 @@ import CreatePessoa from "./components/pessoas/CreatePessoa";
 import ListPessoas from "./components/pessoas/ListPessoas";
 import ShowPessoa from "./components/pessoas/ShowPessoa";
 import UpdatePessoa from "./components/pessoas/UpdatePessoa";
+import CreateProduto from "./components/produtos/CreateProduto";
+import ListProdutos from "./components/produtos/ListProdutos";
 import CreateTipo from "./components/tipos/CreateTipo";
 import ListTipos from "./components/tipos/ListTipos";
 import ShowTipo from "./components/tipos/showTipo";
@@ -57,7 +61,11 @@ const AppRoutes = () => {
                 <Route path="/login"
                     element={<LoginUser />} />
 
-                <Route path="/doacoes" element={<CreateDoacao/>}/>
+                <Route path="/doacoes/create" element={<CreateDoacao/>}/>
+
+                <Route path="/doacoes" element={<ListDoacoes/>}/>
+
+                <Route path="/doacoes/show/:id" element={<ShowDoacao/>}/>
 
                 <Route path="/tipos/create" element={<CreateTipo/>}/>
 
@@ -78,6 +86,10 @@ const AppRoutes = () => {
                 <Route path="/unidades" element={<ListUnidades/>}/>
 
                 <Route path="/unidades/create" element={<CreateUnidade/>}/>
+                
+                <Route path="/produtos/create" element={<CreateProduto/>}/>
+                
+                <Route path="/produtos" element={<ListProdutos/>}/>
                 
 
 

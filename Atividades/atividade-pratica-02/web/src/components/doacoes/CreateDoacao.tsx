@@ -9,7 +9,7 @@ const CreateDoacao = () => {
     const navigate = useNavigate();
     const  [pessoa_id, setPessoaId]= useState(0);
     const  [local_id, setlocalId]= useState(0);
-    const [data1, setData] = useState('');
+    const [data1, setData1] = useState('');
   
 
     const [doacoes, setDoacoes] = useState<doacaoModel[]>([]);
@@ -73,7 +73,8 @@ const CreateDoacao = () => {
                         id="pessoa_id"
                         placeholder="pessoa_id"
                         value={pessoa_id}
-                        />
+                        onChange={e => setPessoaId(parseInt(e.target.value))} />
+                        
                 </div>
 
                
@@ -92,12 +93,12 @@ const CreateDoacao = () => {
                 <div>
                 <label htmlFor="data">data</label>
                     <input
-                        type="text"
+                        type="date"
                         name="data"
                         id="data"
                         placeholder="data"
                         value={data1}
-                        onChange={e => setlocalId(parseInt(e.target.value))} />
+                        onChange={e => setData1((e.target.value))} />
                     
                 </div>
 

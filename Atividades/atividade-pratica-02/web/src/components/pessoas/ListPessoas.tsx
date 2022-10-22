@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
+import { CidadeModel } from "../cidades/ListCidades";
 
 export interface PessoaModel {
     id: number;
@@ -11,6 +12,7 @@ export interface PessoaModel {
     rua:string;
     numero:string;
     created_at: string;
+    cidade:CidadeModel;
 }
 
 

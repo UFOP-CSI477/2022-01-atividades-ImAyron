@@ -22,7 +22,7 @@ const ShowCidade = () => {
 
             <p>Id: {cidade?.id}</p>
             <p>Nome: {cidade?.nome}</p>
-            <p>Estado: {cidade?.estado.nome}</p>
+            <p>Estado: {cidade?.estado_id}</p>
             <p>Data de inserção: {cidade?.created_at}</p>
 
             <div>

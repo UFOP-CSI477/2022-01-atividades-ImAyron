@@ -53,7 +53,6 @@ const ListUnidades = () => {
                                 <td>{item.id}</td>
                                 <td>{item.nome}</td>
                                 <td>{item.cidade.nome}</td>
-                            
                                 <td>{item.numero}</td>
                                 <td>{item.complemento}
                                 </td>

@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
+import { PessoaModel } from "../pessoas/ListPessoas";
+
 
 export interface doacaoModel {
     id: number;
     local_id:  number;
     pessoa_id: number;
-    data: Date;
+    data: string;
+    pessoa:PessoaModel;
+   
+
 }
 
 
 const ListDoacoes = () => {
 
     
-    const [estados, setEstados] = useState<doacaoModel[]>([]);
+    const [doacao, setDoacao] = useState<doacaoModel[]>([]);
 
     const navigate = useNavigate();
 
@@ -24,7 +29,7 @@ const ListDoacoes = () => {
             .then(reponse => {
                 
                 console.log(reponse.data);
-                setEstados(reponse.data);
+                setDoacao(reponse.data);
             })
 
     }, [navigate])
@@ -32,26 +37,28 @@ const ListDoacoes = () => {
 
     return (
         <div>
-            <h2>Lista dos Estados</h2>
+            <h2>Lista das doacoes</h2>
 
             <table>
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Nome</th>
-                        <th>Criação</th>
-                        <th>Ação</th>
+                        <th>Local</th>
+                        <th>Pessoa</th>
+                     
+                        <th>View</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    {estados.map(item => (
+                    {doacao.map(item => (
                         <tr key={item.id}>
                             <td>{item.id}</td>
                             <td>{item.local_id}</td>
-                            <td>{item.pessoa_id}</td>
+                            <td>{item.pessoa.nome}</td>
+                            
                             <td><Link
-                                to={`/doacoes/${item.id}`}>Visualizar</Link></td>
+                                to={`/doacoes/show/${item.id}`}>Visualizar</Link></td>
                         </tr>
                     ))}
 

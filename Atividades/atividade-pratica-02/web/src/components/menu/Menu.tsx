@@ -20,7 +20,8 @@ const Menu = () => {
                 <p></p>
                 <th><Link to="/cidades/create">Criar cidade</Link></th>
                 <p></p>
-                <th><Link to="/doacoes">Criar doacao</Link></th>
+                <th><Link to="/doacoes">Listar doacao</Link></th>
+                <th><Link to="/doacoes/create">Criar doacao</Link></th>
                 <p></p>
                 <th><Link to="/tipos/create">Criar Tipo</Link></th>
                 
@@ -33,6 +34,10 @@ const Menu = () => {
                 <th><Link to="/unidades/create">Criar unidade</Link></th>
                 
                 <th><Link to="/unidades">Listar unidades</Link></th>
+
+                <th><Link to="/produtos">Listar Produtos</Link></th>
+
+                <th><Link to="/produtos/create">Criar produto</Link></th>
 
             </tr>
             </table>
