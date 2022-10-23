@@ -4,32 +4,32 @@ import api from "../../services/api";
 import { PessoaModel } from "../pessoas/ListPessoas";
 
 
-export interface doacaoModel {
+export interface DistribuicaoModel {
     id: number;
-    local_id:  number;
-    pessoa_id: number;
+    produto_id:  number;
+    unidade_id: number;
     data: string;
-    pessoa:PessoaModel;
+   
    
 
 }
 
 
-const ListDoacoes = () => {
+const ListDistribuicao = () => {
 
     
-    const [doacao, setDoacao] = useState<doacaoModel[]>([]);
+    const [distribuicao, setDistribuicoes] = useState<DistribuicaoModel[]>([]);
 
     const navigate = useNavigate();
 
    
     useEffect(() => {
         
-        api.get('/doacoes', )
+        api.get('/distribuicoes', )
             .then(reponse => {
                 
                 console.log(reponse.data);
-                setDoacao(reponse.data);
+                setDistribuicoes(reponse.data);
             })
 
     }, [navigate])
@@ -37,31 +37,27 @@ const ListDoacoes = () => {
 
     return (
         <div>
-            <h2>Lista das doacoes</h2>
+            <h2>Lista das distribuições</h2>
 
             <table>
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Local</th>
-                        <th>Pessoa</th>
-                        <th>Documento</th>
+                        <th>Produto</th>
+                        <th>Unidade</th>
                      
-                        <th>View</th>
+                        
                     </tr>
                 </thead>
 
                 <tbody>
-                    {doacao.map(item => (
+                    {distribuicao.map(item => (
                         <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.local_id}</td>
-                          
-                            <td>{item.pessoa.nome}</td>
-                            <td>{item.pessoa.documento}</td>
+                            <td>{item.produto_id}</td>
+                            <td>{item.unidade_id}</td>
                             
-                            <td><Link
-                                to={`/doacoes/show/${item.id}`}>Visualizar</Link></td>
+                           
                         </tr>
                     ))}
 
@@ -77,4 +73,4 @@ const ListDoacoes = () => {
 
 }
 
-export default ListDoacoes;
+export default ListDistribuicao;

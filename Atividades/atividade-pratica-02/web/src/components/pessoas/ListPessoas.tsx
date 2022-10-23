@@ -46,7 +46,7 @@ const ListPessoas = () => {
                     <tr>
                         <th>Id</th>
                         <th>Nome</th>
-                        <th>Criação</th>
+                        <th>documento</th>
                         <th>Ação</th>
                     </tr>
                 </thead>
@@ -56,7 +56,7 @@ const ListPessoas = () => {
                         <tr key={item.id}>
                             <td>{item.id}</td>
                             <td>{item.nome}</td>
-                            <td>{item.created_at}</td>
+                            <td>{item.documento}</td>
                             <td><Link
                                 to={`/pessoas/show/${item.id}`}>Visualizar</Link></td>
                         </tr>

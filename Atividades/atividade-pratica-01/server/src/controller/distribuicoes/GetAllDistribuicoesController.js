@@ -8,8 +8,8 @@ export class GetAllDistribuicoesController {
         const distribuicoess = await prismaClient.Distribuicao.findMany({
             select: {
                 id:true,
-                produto: true,
-                unidade: true,
+                produto_id: true,
+                unidade_id: true,
                 data: true
             }
         });

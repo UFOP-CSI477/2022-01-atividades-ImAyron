@@ -50,7 +50,7 @@ const ShowPessoa = () => {
 
             <p> Id: {pessoa?.id}</p>
             <p> Nome: {pessoa?.nome}</p>
-            <p>cidade: {pessoa?.tipo_id}</p>
+            <p>Documento: {pessoa?.documento}</p>
             <p>Data de inserção: {pessoa?.created_at}</p>
 
             <div>

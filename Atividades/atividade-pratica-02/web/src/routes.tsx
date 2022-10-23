@@ -4,14 +4,19 @@ import CreateCidade from "./components/cidades/CreateCidade";
 import ListCidades from "./components/cidades/ListCidades";
 import ShowCidade from "./components/cidades/ShowCidade";
 import UpdateCidade from "./components/cidades/UpdateCidade";
+import CreateDistribuicao from "./components/distribuicoes/CreateDistribuicao";
+import ListDistribuicao from "./components/distribuicoes/ListDistribuicao";
 import CreateDoacao from "./components/doacoes/CreateDoacao";
 import ListDoacoes from "./components/doacoes/ListDoacoes";
 import ShowDoacao from "./components/doacoes/ShowDoacao";
+import UpdateDoacao from "./components/doacoes/UpdateDoacao";
 import CreateEstado from "./components/estados/CreateEstado";
 import ListEstados from "./components/estados/ListEstados";
 import ShowEstado from "./components/estados/ShowEstado";
 import UpdateEstado from "./components/estados/UpdateEstado";
 import Header from "./components/header/Header";
+import CreateLocal from "./components/locais/CreateLocal";
+import ListLocais from "./components/locais/ListLocais";
 import CreatePessoa from "./components/pessoas/CreatePessoa";
 import ListPessoas from "./components/pessoas/ListPessoas";
 import ShowPessoa from "./components/pessoas/ShowPessoa";
@@ -67,6 +72,8 @@ const AppRoutes = () => {
 
                 <Route path="/doacoes/show/:id" element={<ShowDoacao/>}/>
 
+                <Route path="/doacoes/update/:id" element={<UpdateDoacao/>}/>
+
                 <Route path="/tipos/create" element={<CreateTipo/>}/>
 
                 <Route path="/tipos" element={<ListTipos/>}/>
@@ -91,6 +98,14 @@ const AppRoutes = () => {
                 
                 <Route path="/produtos" element={<ListProdutos/>}/>
                 
+                <Route path="/distribuicoes" element={<ListDistribuicao/>}/>
+
+                <Route path="/distribuicoes/create" element={<CreateDistribuicao/>}/>
+
+                          
+                <Route path="/locais" element={<ListLocais/>}/>
+
+                <Route path="/locais/create" element={<CreateLocal/>}/>
 
 
 

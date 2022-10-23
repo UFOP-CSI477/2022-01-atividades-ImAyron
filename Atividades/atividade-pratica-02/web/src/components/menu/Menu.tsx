@@ -39,6 +39,15 @@ const Menu = () => {
 
                 <th><Link to="/produtos/create">Criar produto</Link></th>
 
+                <th><Link to="/distribuicoes">Listar Distribuições</Link></th>
+
+                <th><Link to="/distribuicoes/create">Criar Distribuições</Link></th>
+
+                <th><Link to="/locais">Listar locais</Link></th>
+
+                <th><Link to="/locais/create">Criar locais</Link></th>
+
+
             </tr>
             </table>
            
