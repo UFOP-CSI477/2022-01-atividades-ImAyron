@@ -20,17 +20,24 @@
 
   Este projeto terá as seguintes funcionalidades:
   Funções Administrador
+  
   1 - Criar item (Preço)
+  
   2 - Editar item
+  
   3 - Excluir item
   
   Funções Cozinha
+  
   1 -  Dizer quando o pedido estiver pronto
   
   
   Funções Garçom
+  
   1 - Exibir os itens cadastrados
+  
   2 - adicionar os itens no carrinho
+  
   3 - Fechar pedido
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
@@ -40,8 +47,7 @@
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
   
-  Página inicial: views/welcome.blade.php
-  Página para realização dos pedidos pedidos: views/pedidos/index.blade.php
+  O protótipo desenvolvido se encontra no link https://www.youtube.com/watch?v=Xq-1itV-O_s&ab_channel=AYRONLUIGIDEPAIVA
   
 ### 5. Referências
 
