@@ -47,7 +47,7 @@
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
   
-  O protótipo desenvolvido se encontra no link https://www.youtube.com/watch?v=Xq-1itV-O_s&ab_channel=AYRONLUIGIDEPAIVA
+  A demonstração do protótipo desenvolvido se encontra no link https://www.youtube.com/watch?v=Xq-1itV-O_s&ab_channel=AYRONLUIGIDEPAIVA
   
 ### 5. Referências
 
