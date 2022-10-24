@@ -21,7 +21,8 @@ export class CreateDistribuicoesController {
                         id: unidade_id
                     }
                 },
-                data
+                
+                data: new Date().toISOString()
             }
         });
         console.log(distribuicoes);

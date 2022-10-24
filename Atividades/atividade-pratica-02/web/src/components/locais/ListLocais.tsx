@@ -11,8 +11,9 @@ export interface LocalModel {
     rua:string;
     nummero:string;
     complemento:string;
+    cidade_id:number;
    
-    cidade_id: CidadeModel;
+
 }
 
 const ListLocais = () => {
@@ -43,11 +44,8 @@ const ListLocais = () => {
         }
 
         try {
-            await api.delete(`/locais/${id}`, {
-                data: {
-                    data
-                }
-            });
+           
+            
             window.alert("Local excluído com sucesso!");
             
             //loadData();
@@ -70,7 +68,7 @@ const ListLocais = () => {
                         <th>rua</th>
                         <th>numero</th>
                         <th>complemento</th>
-                        <th>cidade</th>
+                        <th>cidade id</th>
                         <th>Vizualizar</th>
                     </tr>
                 </thead>
@@ -84,10 +82,8 @@ const ListLocais = () => {
                                 <td>{item.rua}</td>
                                 <td>{item.nummero}</td>
                                 <td>{item.complemento}</td>
-                                <td><button type="button" onClick={e => {
-                                        handleDeleteLocal(item.id);
-                                    }}>Excluir</button>
-                                </td>
+                                <td>{item.cidade_id}</td>
+                              
                                 <td><Link to={`/locais/show/${item.id}`}>Visualizar</Link> </td>
                             </tr>
                         )  

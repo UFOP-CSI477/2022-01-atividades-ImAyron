@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
 import { PessoaModel } from "../pessoas/ListPessoas";
+import { ProdutoModel } from "../produtos/ListProdutos";
 
 
 export interface DistribuicaoModel {
@@ -9,6 +10,7 @@ export interface DistribuicaoModel {
     produto_id:  number;
     unidade_id: number;
     data: string;
+    produto:ProdutoModel;
    
    
 
@@ -43,8 +45,8 @@ const ListDistribuicao = () => {
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Produto</th>
-                        <th>Unidade</th>
+                        <th>Id do Produto</th>
+                        <th>Id da Unidade</th>
                      
                         
                     </tr>

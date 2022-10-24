@@ -10,7 +10,7 @@ export class DeletePessoaController {
         id = parseInt(id);
         
         try{
-            const Pessoa = await prismaClient.Pessoa_coleta.delete({
+            const Pessoa = await prismaClient.pessoa.delete({
                 where: {
                     id: id
                 }

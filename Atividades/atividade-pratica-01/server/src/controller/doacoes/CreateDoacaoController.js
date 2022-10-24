@@ -21,7 +21,7 @@ export class CreateDoacaoController {
                         id: pessoa_id
                     }
                 },
-                data
+                data:new Date().toISOString()
             }
         });
         console.log(doacao);

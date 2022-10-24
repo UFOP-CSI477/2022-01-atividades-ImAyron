@@ -17,6 +17,8 @@ import UpdateEstado from "./components/estados/UpdateEstado";
 import Header from "./components/header/Header";
 import CreateLocal from "./components/locais/CreateLocal";
 import ListLocais from "./components/locais/ListLocais";
+import ShowLocal from "./components/locais/ShowLocal";
+import UpdateLocal from "./components/locais/UpdateLocal";
 import CreatePessoa from "./components/pessoas/CreatePessoa";
 import ListPessoas from "./components/pessoas/ListPessoas";
 import ShowPessoa from "./components/pessoas/ShowPessoa";
@@ -107,7 +109,9 @@ const AppRoutes = () => {
 
                 <Route path="/locais/create" element={<CreateLocal/>}/>
 
+                <Route path="/locais/show/:id" element={<ShowLocal/>}/>
 
+                <Route path="/locais/update/:id" element={<UpdateLocal/>}/>
 
             
             </Routes>

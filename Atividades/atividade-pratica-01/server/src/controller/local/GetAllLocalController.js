@@ -12,7 +12,8 @@ export class GetAllLocalController {
                  rua:true,
                  nummero:true,
                  complemento:true,
-                 local:true
+                 local:true,
+                 cidade_id:true
                
             }
         });

@@ -16,7 +16,7 @@ const CreateUnidade = () => {
     const [cidade, setCidades] = useState<CidadeModel[]>([]);
 
     useEffect(() => {
-        api.get('/cidades')
+        api.get('/unidades')
             .then(response => {
                 setCidades(response.data);
             })

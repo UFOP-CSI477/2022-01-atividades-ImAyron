@@ -38,7 +38,7 @@ const ShowPessoa = () => {
 
             
         } catch(error) {
-            alert('Erro ao excluir o Estado!');
+            alert('Erro ao excluir a pessoa!');
             console.error(error);
         }
 

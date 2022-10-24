@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../services/api";
 import { doacaoModel } from "../doacoes/ListDoacoes";
-
-
+import SelectLocais from "../locais/SelectLocais";
+import SelectPessoas from "../pessoas/SelectPessoas";
 const CreateDoacao = () => {
 
     const navigate = useNavigate();
@@ -14,19 +14,7 @@ const CreateDoacao = () => {
 
     const [doacoes, setDoacoes] = useState<doacaoModel[]>([]);
 
-    useEffect(() => {
-        api.get('/pessoas')
-            .then(response => {
-                setDoacoes(response.data);
-            })
-    }, []);
-    
-    useEffect(() => {
-        api.get('/locais')
-            .then(response => {
-                setDoacoes(response.data);
-            })
-    }, []);
+   
 
     const handleNewDoacao = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -61,34 +49,22 @@ const CreateDoacao = () => {
 
     return (
         <div>
-            <h3>Cadastrar Cidade</h3>
+            <h3>Cadastrar doação</h3>
 
             <form onSubmit={handleNewDoacao}>
 
-                <div>
-                    <label htmlFor="pessoa_id">pessoa</label>
-                    <input
-                        type="text"
-                        name="pessoa_id"
-                        id="pessoa_id"
-                        placeholder="pessoa_id"
-                        value={pessoa_id}
-                        onChange={e => setPessoaId(parseInt(e.target.value))} />
-                        
-                </div>
-
                
-                <div>
-                    <label htmlFor="localId">localId</label>
-                    <input
-                        type="text"
-                        name="localId"
-                        id="localId"
-                        placeholder="local"
-                        value={local_id}
-                        onChange={e => setlocalId(parseInt(e.target.value))} />
-                    
-                </div>
+                     
+            <SelectPessoas
+                    id={pessoa_id} 
+                    setId={setPessoaId}
+                />
+
+                <SelectLocais
+                    id={local_id} 
+                    setId={setlocalId}
+                />
+               
 
                 <div>
                 <label htmlFor="data">data</label>
@@ -101,6 +77,7 @@ const CreateDoacao = () => {
                         onChange={e => setData1((e.target.value))} />
                     
                 </div>
+          
 
                 
 

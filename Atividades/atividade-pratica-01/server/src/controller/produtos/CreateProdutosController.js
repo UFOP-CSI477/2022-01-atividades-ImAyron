@@ -17,7 +17,7 @@ export class CreateProdutosController {
                     }
                 },
                 etiqueta,
-                validade
+                validade:  new Date().toISOString()
             }
         });
         console.log(produtos);

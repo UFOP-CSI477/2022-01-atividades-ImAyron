@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../../services/api";
+import { LocalModel } from "../locais/ListLocais";
 import { PessoaModel } from "../pessoas/ListPessoas";
 
 
@@ -10,6 +11,7 @@ export interface doacaoModel {
     pessoa_id: number;
     data: string;
     pessoa:PessoaModel;
+    local:LocalModel
    
 
 }
@@ -55,8 +57,7 @@ const ListDoacoes = () => {
                     {doacao.map(item => (
                         <tr key={item.id}>
                             <td>{item.id}</td>
-                            <td>{item.local_id}</td>
-                          
+                            <td>{item.local.nome}</td>
                             <td>{item.pessoa.nome}</td>
                             <td>{item.pessoa.documento}</td>
                             

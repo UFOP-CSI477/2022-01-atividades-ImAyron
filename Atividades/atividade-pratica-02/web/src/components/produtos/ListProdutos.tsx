@@ -39,10 +39,10 @@ const ListProdutos = () => {
                     <tr>
                         <th>Id</th>
                         <th>Etiqueta</th>
-                        <th>doacao</th>
+                        <th>Id do local</th>
                        
                        
-                        <th>data</th>
+                        <th>Data da doação</th>
                     </tr>
                 </thead>
 
@@ -52,8 +52,8 @@ const ListProdutos = () => {
                             <tr>
                                 <td>{item.id}</td>
                                 <td>{item.etiqueta}</td>
-                                <td>{item.doacao.pessoa_id}</td>
-                              
+                                <td>{item.doacao.local_id}</td>
+                                <td>{item.doacao.data}</td>
                              
                                
                             </tr>
