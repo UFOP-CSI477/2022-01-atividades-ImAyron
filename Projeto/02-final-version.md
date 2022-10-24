@@ -41,4 +41,4 @@ O laravel tem suporte para diversos bancos de dados, mas o que eu escolhi é o S
 Para executar a aplicação devemos iniciar o servidor, para isso entre na pasta raiz do projeto e digite o seguinte comando Php artisan serve, por padrão a aplicação executará no endereço http://127.0.0.1:8000, acesse esse endereço diretamente do seu navegador, e terá  acesso a todas as funcionalidades descritas no projeto.
 
 ### 6. Referências
-<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
+Documentation Laravel - https://laravel.com/
